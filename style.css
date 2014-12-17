@@ -91,13 +91,29 @@ body {
 	height: 70px;
 	line-height: 70px;
 	list-style: none;
-	padding-bottom: 2px;
 }
+
 .sidebar__about-me li:hover { 
 	background-color: #3ba8c0;
 }
+
+.sidebar__about-me li:hover:last-child { 
+	background-color: #3ba8c0;
+	-webkit-border-radius: 0 0 4px 4px;
+	-moz-border-radius: 0 0 4px 4px;
+	border-radius: 0 0 4px 4px;
+}
+
+.sidebar__about-me li:hover:first-child { 
+	background-color: #3ba8c0;
+	-webkit-border-radius: 4px 4px 0 0 ;
+	-moz-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
+}
+
 .sidebar__about-me li a { 
 	text-decoration: none;
+	height: 68px;
 	color: #959aa8;
 	display: block;
 	margin-left: 20px;
@@ -131,6 +147,9 @@ body {
 	padding-top: 15px;
 	font-size: 21px;
 	background-color: #3ba8c0;
+	-webkit-border-radius: 4px 4px 0 0 ;
+	-moz-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
 }
 .sidebar__contacts ul { 
 	list-style: none;
@@ -144,6 +163,8 @@ body {
 	position: relative;
 	color:white;
 }
+
+
 .sidebar__contact-mail { 
 	background-color: #41b9d4;
 }
@@ -170,6 +191,9 @@ body {
 }
 .sidebar__contact-skype { 
 	background-color: #51daf8;
+	-webkit-border-radius: 0 0 4px 4px;
+	-moz-border-radius: 0 0 4px 4px;
+	border-radius: 0 0 4px 4px;
 }
 .sidebar__contact-skype:before { 
 	content: '';
