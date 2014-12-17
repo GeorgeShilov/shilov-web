@@ -1,0 +1,590 @@
+
+html {
+	width: 100%;
+	height: 100%;
+	font-size: 100.01%
+}
+
+body { 
+	font-size: 14px;
+	width: 100%;
+	height: 100%;
+	background-color: #e7e7f1;
+	margin: 0;
+	padding: 0;
+}
+.clearfix {
+	content:'';
+	display: table;
+	clear: both;
+}
+.header {
+	width: 100%;
+	min-height: 120px;
+	background-color: #eff3f7;
+	display: block;
+	position: relative;
+}
+.header:after { 
+	content:'';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 1400px;
+	height: 3px;
+	background-color: #1c667a;
+	background-image: -webkit-linear-gradient(left, rgba(28,102,122,.95), rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
+	background-image: -moz-linear-gradient(left, rgba(28,102,122,.95), rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
+	background-image: -o-linear-gradient(left, rgba(28,102,122,.95), rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
+	background-image: -ms-linear-gradient(left, rgba(28,102,122,.95), rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
+	background-image: linear-gradient(to right, rgba(28,102,122,.95), rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
+}
+.content__wrapper {
+	width: 980px;
+	height: 100%;
+	margin: 0 auto;
+}
+.logo {
+	float:left;
+	width: 245px;
+	margin-top: 30px;
+	margin-left: 100px;
+}
+.social-menu { 
+	float:right;
+	margin-right: 105px;
+	margin-top: 20px;
+}
+.social-menu li { 
+	list-style: none;
+	display: inline-block;
+	margin-right: 20px;
+}
+.social-menu li a:hover {
+
+}
+
+
+.main {
+	margin-top: 24px;
+}
+.sidebar {
+	float: left;
+	display: block;
+}
+/* Меню навигации */
+
+.sidebar__about-me {
+	width: 250px;
+	height: 219px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background-color: #eff3f7;
+	position: relative;
+}
+.sidebar__about-me ul { 
+	padding: 0;
+}
+
+.sidebar__about-me li { 
+	height: 70px;
+	line-height: 70px;
+	list-style: none;
+	padding-bottom: 2px;
+}
+.sidebar__about-me li:hover { 
+	background-color: #3ba8c0;
+}
+.sidebar__about-me li a { 
+	text-decoration: none;
+	color: #959aa8;
+	display: block;
+	margin-left: 20px;
+	border-top: 2px solid #3ba8c0;
+	width: 210px;
+	font-size: 25px;
+}
+.sidebar__about-me li:first-child a { 
+	border-top: 0px solid #3ba8c0;
+} 
+
+.sidebar__about-me li a:hover { 
+	color:white;
+}
+
+/*     */
+/*   Блок контактов   */
+.sidebar__contacts { 
+	margin-top: 20px;
+	width: 250px;
+	height: 150px;
+	background-color: #eff3f7;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.sidebar__contact-title {
+	color: white;
+	height: 40px;
+	padding-left: 21px;
+	padding-top: 15px;
+	font-size: 21px;
+	background-color: #3ba8c0;
+}
+.sidebar__contacts ul { 
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.sidebar__contacts ul li{
+	height: 25px;
+	padding-left: 83px;
+	padding-top: 14px;
+	position: relative;
+	color:white;
+}
+.sidebar__contact-mail { 
+	background-color: #41b9d4;
+}
+.sidebar__contact-mail:before { 
+	content: '';
+	background: url(img/sidebar_mail.png) 0 0 no-repeat;
+	height: 25px;
+	width: 25px;
+	position: absolute;
+	left: 42px;
+	top: 10px;
+}
+.sidebar__contact-phone {
+	background-color: #48cbe8;
+}
+.sidebar__contact-phone:before {
+	content: '';
+	background: url(img/sidebar_phone.png) 0 0 no-repeat;
+	height: 25px;
+	width: 25px;
+	position: absolute;
+	left: 42px;
+	top: 10px;
+}
+.sidebar__contact-skype { 
+	background-color: #51daf8;
+}
+.sidebar__contact-skype:before { 
+	content: '';
+	background: url(img/sidebar_skype.png) 0 0 no-repeat;
+	height: 25px;
+	width: 25px;
+	position: absolute;
+	left: 42px;
+	top: 10px;
+}
+
+
+/*   Блок контента   */
+.content {
+	width: 650px;
+	float: left;
+	margin-left: 60px;
+}
+.main__inform,
+.main__exp,
+.main__edu,
+.main_myworks 
+ {
+	background-color: #eff3f7;
+	margin-top: 20px;
+}
+.main__inform {
+	margin-top: 15px;
+}
+.main__inform-wrapper{
+	display: block;
+}
+
+/*   */
+
+/*  Блок страницы about-me */
+.main_myworks {
+	min-height: 840px;
+	width: 100%;
+}
+.main_myworkslist {
+	list-style: none;
+	padding: 0;
+	padding-left: 20px;
+	padding-top: 21px;
+}
+.main_myworkslist li { 
+	display: inline-block;
+	width: 181px;
+	height: 127px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background-color: #f3f8f0;
+	border: 2px solid #3ba8c0;
+	margin-right: 20px;
+	margin-bottom: 110px;
+}
+.main_myworkslist li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.main_myworkslist li a.main_url
+{
+	display: block;
+	color: #4eaec4;
+	width: 181px;
+	height: 10px;
+	margin-top: 13px;
+	text-align: center;
+	font-size: 13px;
+	font-style: italic;
+	color: #3ba8c0;
+	text-decoration: none;
+}
+.main_myworkslist li span{
+	display: block;
+	margin-top: 17px;
+	text-align: center;
+	font-size: 15px;
+	color: #4a545d;
+}
+.main_myworkslist li:last-child { 
+	display: inline-block;
+	width: 181px;
+	height: 127px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background-color: #edf8fc;
+	margin-right: 20px;
+	margin-bottom: 110px;
+	background: url(img/myworks_addnew.png);
+}
+/*        */
+/*  Страница свяжитесь со мной  */
+.contact { 
+	background-color: #eff3f7;
+	margin-top: 0px;
+	padding-top: 0;
+	width: 100%;
+	-webkit-border-radius: 3px/4px;
+	-moz-border-radius: 3px/4px;
+	border-radius: 3px/4px;
+}
+
+
+h2.contact_heading { 
+	display: block;
+	text-align: center;
+	padding-top: 55px;
+	font-size: 27px;
+	background-color: #48cbe8;
+	border-bottom: 17px solid #67dffa;
+	height: 138px;
+	color:white;
+	margin: 0;
+}
+.contat-form {
+	width: 100%;
+}
+
+form { 
+	display: block;
+	margin: 0 auto;
+	width: 402px;
+}
+label { 
+	display: block;
+	width: 100px;
+	margin: 0;
+	color: #a3a7b4;
+	margin-top: 20px;
+}
+input[type="text"] { 
+	font-family: serif;
+	border: 1px solid #48cbe8;
+	-webkit-border-radius: 4px/2px;
+	-moz-border-radius: 4px/2px;
+	border-radius: 4px/2px;
+	background-color: #fbfcfd;
+	width: 192px;
+	height: 41px;
+	display: block;
+	padding-left: 9px;
+	color: #48cbe8;
+	margin-top: 7px;
+}
+.half_width { 
+	display: inline-block;
+	width: 190px;
+
+}
+.pl { 
+	margin-left: 18px;
+}
+ .message input[type="text"] { 
+	width: 404px;
+	height: 183px;
+	margin: 0;
+	padding-left: 9px;
+	color: #48cbe8;
+	margin-top: 7px;
+}
+
+.contact-form input[type="submit"] {
+	border: 1px solid #48cbe8;
+	width: 139px;
+	height: 31px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #48cbe8;
+	color: white;
+	float: left;
+	margin: 33px 0;
+}
+
+
+input[type="reset"] { 
+	color:white;
+	border: 1px solid #849db5;
+	width: 141px;
+	height: 31px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #849db5;
+	float: right;
+	margin-right: -4px;
+	margin: 33px 0;
+}
+
+/*      страница входа  */
+.login_page { 
+	background-color: #eff3f7;
+	margin-top: 0px;
+	padding-top: 0;
+	width: 590px;
+	margin: 0 auto;
+}
+
+.login-form { 
+	width: 590px;
+	height: 400px;
+	background: 
+	background-color: #eff3f7;
+	margin-top: 0px;
+	padding-top: 0;
+	width: 100%;
+	-webkit-border-radius: 3px/4px;
+	-moz-border-radius: 3px/4px;
+	border-radius: 3px/4px;
+	-webkit-box-shadow: 0 4px 7px rgba(13,16,7,.29);
+	-moz-box-shadow: 0 4px 7px rgba(13,16,7,.29);
+	box-shadow: 0 4px 7px rgba(13,16,7,.29);
+}
+
+.half_width_login_button input[type="submit"] { 
+	display: block;
+	margin: 0 auto;
+}
+
+.half_width_login_button { 
+	margin: 0 auto;
+	width: 402px;
+	height: 20px;
+	display: block;
+}
+
+h2.login_heading { 
+	display: block;
+	text-align: center;
+	padding-top: 36px;
+	font-size: 40px;
+	background-color: #48cbe8;
+	border-bottom: 15px solid #67dffa;
+	height: 107px;
+	color:white;
+	margin: 0;
+	-webkit-border-radius: 3px/4px;
+	-moz-border-radius: 3px/4px;
+	border-radius: 3px/4px;
+}
+.half_width_login label { 
+	font-size: 40px;
+	margin: 0 auto;
+	margin-top: 3px;
+}
+
+.half_width_password label { 
+	font-size: 40px;
+	margin: 0 auto;
+	margin-top: 4px;
+}
+
+.half_width_login input[type="text"],
+.half_width_password input[type="text"]{ 
+	margin-left: -160px;
+	width: 424px;
+	height: 62px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background-color: rgba(249,126,118,.33);
+}
+
+.login-form input[type="submit"] { 
+	margin: 29px auto;
+	margin-bottom: 18px;
+	border: 1px solid #48cbe8;
+	width: 226px;
+	height: 50px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	background-color: #48cbe8;
+	color: white;
+	font-size: 36px;
+}
+
+
+/*        */
+/*   Главная старница    */
+.content_header { 
+	display: inline-block;
+	margin: 0 auto;
+	padding: 0 20px;
+	height: 67px;
+	font-size: 27px;
+	line-height: 56px;
+	border-bottom: 2px solid #3ba8c0;
+	color: #3ba8c0;
+	font-family: FiraSans Book;
+}
+.main__inform-photo {
+	display: block;
+	float: left;
+	width: 200px;
+	height: 200px; 
+	background: url(img/photo.png);
+	margin: 16px 22px;
+}
+.main__inform-data {
+	display: block;
+	float: left;
+	margin-top: 0px;
+	margin-bottom: 27px;
+}
+.main__inform-data ul {
+	list-style: none;
+	padding-left: 21px;
+	padding-right:25px;
+}
+.main__inform-data ul li {
+	line-height: 40px;
+}
+.main__inform-data ul li span {
+	font-weight: bold;
+	margin-right: 20px;
+}
+.main__inform-data ul li ul {
+	list-style: none;
+	padding: 0;
+}
+.main__inform-data ul li ul li {
+	display: inline-block;
+	float: left;
+}
+.main__exp ul {
+	list-style: none;
+	padding-top: 0;
+	padding-bottom: 26px;
+}
+.main__exp li {
+	margin-left: 131px;
+	position: relative;
+	margin-top: 37px;
+}
+.main__exp ul span {
+	display: block;
+	font-size: 15px;
+}
+.main__exp ul span:last-child {
+	display: block;
+	color: #999fa5;
+	font-size: 15px;
+}
+.main__exp ul li:before {
+	content: '';
+	position: absolute;
+	background: url('img/main_portfel.png') no-repeat 0 0;
+	width: 36px;
+	height: 34px;
+	left: -64px;
+}
+
+.main__edu ul {
+	list-style: none;
+	padding-top: 0;
+	padding-bottom: 26px;
+}
+.main__edu li {
+	margin-left: 131px;
+	position: relative;
+	margin-top: 37px;
+}
+.main__edu ul span {
+	display: block;
+	font-size: 15px;
+}
+.main__edu ul span:last-child {
+	display: block;
+	color: #999fa5;
+	font-size: 15px;
+}
+.main__edu ul li:before {
+	content: '';
+	position: absolute;
+	background: url('img/main_ht.png') no-repeat 0 0;
+	width: 42px;
+	height: 34px;
+	left: -70px;
+}
+.main__edu ul .course:before {
+	content: '';
+	position: absolute;
+	background: url('img/main_web.png') no-repeat 0 0;
+	width: 36px;
+	height: 36px;
+	left: -64px;
+}
+.footer {
+	height: 71px;
+	display: block;
+	background-color: #eff3f7;
+	margin-top: 39px;
+	position: relative;
+}
+.footer:before { 
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1400px;
+	height: 3px;
+	background-color: #1c667a;
+	background-image: -webkit-linear-gradient(left, rgba(28,102,122,.95), rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
+	background-image: -moz-linear-gradient(left, rgba(28,102,122,.95), rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
+	background-image: -o-linear-gradient(left, rgba(28,102,122,.95), rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
+	background-image: -ms-linear-gradient(left, rgba(28,102,122,.95), rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
+	background-image: linear-gradient(to right, rgba(28,102,122,.95), rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
+}
+.footer__copywright{
+	padding-top: 34px;
+	text-align: center;
+}
