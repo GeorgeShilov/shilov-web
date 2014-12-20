@@ -10,32 +10,16 @@
 			<div class="logo"><img src="img/logo.png" alt=""></div>
 			<div class="social-menu">
 				<ul>
-					<li><a class="vk" href="https://vk.com/id6723558"></a></li>
-					<li><a class="twi" href="https://twitter.com/NSKlimit"></a></li>
-					<li><a class="fb" href="https://www.facebook.com/?q=#/shilov.george"></a></li>
-					<li><a class="gh" href="https://github.com/GeorgeShilov"></a></li>
+					<li><a href=""><img src="img/vk-logo.png" alt=""></a></li>
+					<li><a href=""><img src="img/twitter-logo.png" alt=""></a></li>
+					<li><a href=""><img src="img/fb-logo.png" alt=""></a></li>
+					<li><a href=""><img src="img/gh-logo.png" alt=""></a></li>
 				</ul>
 			</div>
 		</div>
 		<div class="main"> 
 			<div class="content__wrapper clearfix">
-				<div class="sidebar">
-					<div class="sidebar__about-me">
-						<ul>
-							<li><a href="/index.html">Обо мне</a></li>
-							<li><a href="/about-me.html">Мои работы</a></li>
-							<li><a href="/contact-me.html">Связаться со мной</a></li>
-						</ul>
-					</div>
-					<div class="sidebar__contacts">
-						<div class="sidebar__contact-title">Контакты</div>
-						<ul>
-							<li class="sidebar__contact-mail"><a href="mialto:shilov.g.s@gmail.com">shilov.g.s@gmail.com</a></li>
-							<li class="sidebar__contact-phone"><a href="tel:+79602771883">+79602771883</a></li>
-							<li class="sidebar__contact-skype"><a href="skype:George_Shilov">George_Shilov</a></li>
-						</ul>
-					</div>
-				</div>
+				<?php include(sidebar.php); ?>
 				<div class="content">
 					<div class="main__inform clearfix">
 						<div class="main__inform-wrapper">
@@ -63,13 +47,11 @@
 						<h2 class="content_header">Опыт работы</h2>
 							<ul>
 								<li>
-									<span>404-group - SEO специалист</span>
-									<span>Июнь 2014 - настоящее время</span>
+									<span>"ИП Боровицкий" - Продавец дисков</span>
+									<span>Сентябрь 2005 - Август 2008</span>
 								</li>
-								<li><span>Zaochnik - SEO специалист</span>
-									<span>Август 2012 - Июнь 2014</span></li>
-								<li><span>Netcallidus Ltd. - SEO специалист</span>
-									<span>Апрель 2011 - Август 2012</span></li>
+								<li><span>"ООО Системы безопастности" - Системный администратор</span>
+									<span>Июнь 2008 - Июль 2010</span></li>
 							</ul>
 						</div>
 					</div>
@@ -78,8 +60,8 @@
 						<h2 class="content_header">Образование</h2>
 							<ul>
 										<li>
-											<span>Незаконченное высшее. БГУИР</span>
-											<span>Сентябрь 2010 - по настоящее время</span>
+											<span>Незаконченное высшее. СПБГУ ИТМО</span>
+											<span>Октябрь 2012 - по настоящее время</span>
 										</li>
 										<li class="course"><span>Курсы Loftschool.ru</span>
 											<span>Ноябрь 2014 - по настоящее время</span></li>
@@ -94,5 +76,6 @@
 					<span>© 2014, Это мой сайт, пожалуйста, не копируйте и не воруйте его</span>
 				</div>
 		</div>
+	</div>
 </body>
 </html>

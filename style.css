@@ -1,3 +1,88 @@
+@font-face {
+    font-family: 'HelveticaNeueCyr-Bold';
+    src: url('/fonts/helveticaneuecyr-bold/helveticaneuecyr-bold-webfont.eot');
+    src: url('/fonts/helveticaneuecyr-bold/helveticaneuecyr-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/helveticaneuecyr-bold/helveticaneuecyr-bold-webfont.woff2') format('woff2'),
+         url('/fonts/helveticaneuecyr-bold/helveticaneuecyr-bold-webfont.woff') format('woff'),
+         url('/fonts/helveticaneuecyr-bold/helveticaneuecyr-bold-webfont.ttf') format('truetype'),
+         url('/fonts/helveticaneuecyr-bold/helveticaneuecyr-bold-webfont.svg#helveticaneuecyrbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Helvetica Neue Cyr Thin';
+    src: url('/fonts/helveticaneue-thin/helveticaneuecyr-thin-webfont.eot');
+    src: url('/fonts/helveticaneue-thin/helveticaneuecyr-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/helveticaneue-thin/helveticaneuecyr-thin-webfont.woff2') format('woff2'),
+         url('/fonts/helveticaneue-thin/helveticaneuecyr-thin-webfont.woff') format('woff'),
+         url('/fonts/helveticaneue-thin/helveticaneuecyr-thin-webfont.ttf') format('truetype'),
+         url('/fonts/helveticaneue-thin/helveticaneuecyr-thin-webfont.svg#helveticaneuecyrthin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ProximaNovaCond';
+    src: url('/fonts/ProximaNovaCond/proximanovacond-semibold-webfont.eot');
+    src: url('/fonts/ProximaNovaCond/proximanovacond-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/ProximaNovaCond/proximanovacond-semibold-webfont.woff2') format('woff2'),
+         url('/fonts/ProximaNovaCond/proximanovacond-semibold-webfont.woff') format('woff'),
+         url('/fonts/ProximaNovaCond/proximanovacond-semibold-webfont.ttf') format('truetype'),
+         url('/fonts/ProximaNovaCond/proximanovacond-semibold-webfont.svg#proxima_nova_condensedSBd') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'fira_sansbook';
+    src: url('/fonts/fira_sansbook/firasans-book.eot');
+    src: url('/fonts/fira_sansbook/firasans-book.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/fira_sansbook/firasans-book.woff') format('woff'),
+         url('/fonts/fira_sansbook/firasans-book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'fira_sansmedium';
+    src: url('/fonts/fira_sansmedium/firasans-medium.eot');
+    src: url('/fonts/fira_sansmedium/firasans-medium.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/fira_sansmedium/firasans-medium.woff') format('woff'),
+         url('/fonts/fira_sansmedium/firasans-medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'fira_sanslight';
+    src: url('/fonts/fira_sanslight/firasans-light.eot');
+    src: url('/fonts/fira_sanslight/firasans-light.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/fira_sanslight/firasans-light.woff') format('woff'),
+         url('/fonts/fira_sanslight/firasans-light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'fira_sanslight_italic';
+    src: url('/fonts/fira_sanslight_italic/firasans-lightitalic.eot');
+    src: url('/fonts/fira_sanslight_italic/firasans-lightitalic.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/fira_sanslight_italic/firasans-lightitalic.woff') format('woff'),
+         url('/fonts/fira_sanslight_italic/firasans-lightitalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'fira_sansregular';
+    src: url('/fonts/fira_sansregular/firasans-regular.eot');
+    src: url('/fonts/fira_sansregular/firasans-regular.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/fira_sansregular/firasans-regular.woff') format('woff'),
+         url('/fonts/fira_sansregular/firasans-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+
+
 
 html {
 	width: 100%;
@@ -9,9 +94,12 @@ body {
 	font-size: 14px;
 	width: 100%;
 	height: 100%;
-	background-color: #e7e7f1;
 	margin: 0;
 	padding: 0;
+	background: url(img/bgc.jpg) 0 0;
+}
+a {
+	font-style: none;
 }
 .clearfix {
 	content:'';
@@ -33,11 +121,9 @@ body {
 	width: 1400px;
 	height: 3px;
 	background-color: #1c667a;
-	background-image: -webkit-linear-gradient(left, rgba(28,102,122,.95), rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
-	background-image: -moz-linear-gradient(left, rgba(28,102,122,.95), rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
-	background-image: -o-linear-gradient(left, rgba(28,102,122,.95), rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
-	background-image: -ms-linear-gradient(left, rgba(28,102,122,.95), rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
-	background-image: linear-gradient(to right, rgba(28,102,122,.95), rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
+	background-image: -moz-linear-gradient(0deg, rgb(28,102,122) 0%, rgb(246,250,254) 0%, rgb(216,216,216) 0%, rgb(242,246,250) 0%, rgb(135,174,186) 28%, rgb(28,102,122) 48%, rgb(135,174,186) 71%, rgb(242,246,250) 100%);
+	background-image: -webkit-linear-gradient(0deg, rgb(28,102,122) 0%, rgb(246,250,254) 0%, rgb(216,216,216) 0%, rgb(242,246,250) 0%, rgb(135,174,186) 28%, rgb(28,102,122) 48%, rgb(135,174,186) 71%, rgb(242,246,250) 100%);
+	background-image: -ms-linear-gradient(0deg, rgb(28,102,122) 0%, rgb(246,250,254) 0%, rgb(216,216,216) 0%, rgb(242,246,250) 0%, rgb(135,174,186) 28%, rgb(28,102,122) 48%, rgb(135,174,186) 71%, rgb(242,246,250) 100%);
 }
 .content__wrapper {
 	width: 980px;
@@ -48,7 +134,7 @@ body {
 	float:left;
 	width: 245px;
 	margin-top: 30px;
-	margin-left: 100px;
+	padding-left: 100px;
 }
 .social-menu { 
 	float:right;
@@ -60,10 +146,44 @@ body {
 	display: inline-block;
 	margin-right: 20px;
 }
-.social-menu li a:hover {
-
+.social-menu li a { 
+	display: block;
+	width: 48px;
+	height: 48px;
 }
 
+.social-menu a.vk { 
+	background: url("img/vk.png") 0 0 no-repeat;
+}
+.social-menu a.vk:hover { 
+	background: url("img/vk-logo.png") 0 0 no-repeat;
+}
+
+.social-menu a.twi { 
+	background: url("img/twitter-logo.png") 0 0 no-repeat;
+}
+.social-menu a.twi:hover { 
+	background: url("img/twi_hover.png") 0 0 no-repeat;
+}
+
+.social-menu a.fb { 
+	background: url("img/fb-logo.png") 0 0 no-repeat;
+}
+.social-menu a.fb:hover { 
+	background: url("img/fb_hover.png") 0 0 no-repeat;
+}
+
+.social-menu a.gh { 
+	background: url("img/gh-logo.png") 0 0 no-repeat;
+}
+.social-menu a.gh:hover { 
+	background: url("img/github_hover.png") 0 0 no-repeat; 
+}
+
+
+
+
+/* основной блок */
 
 .main {
 	margin-top: 24px;
@@ -76,20 +196,23 @@ body {
 
 .sidebar__about-me {
 	width: 250px;
-	height: 219px;
+	min-height: 219px;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
 	background-color: #eff3f7;
 	position: relative;
+	margin-bottom: 20px;
+	font-family: "fira_sansbook";
+	font-size: 21px;
 }
 .sidebar__about-me ul { 
 	padding: 0;
 }
 
 .sidebar__about-me li { 
-	height: 70px;
-	line-height: 70px;
+	min-height: 73px;
+	line-height: 73px;
 	list-style: none;
 }
 
@@ -97,33 +220,32 @@ body {
 	background-color: #3ba8c0;
 }
 
-.sidebar__about-me li:hover:last-child { 
-	background-color: #3ba8c0;
-	-webkit-border-radius: 0 0 4px 4px;
-	-moz-border-radius: 0 0 4px 4px;
-	border-radius: 0 0 4px 4px;
-}
-
 .sidebar__about-me li:hover:first-child { 
 	background-color: #3ba8c0;
-	-webkit-border-radius: 4px 4px 0 0 ;
-	-moz-border-radius: 4px 4px 0 0;
-	border-radius: 4px 4px 0 0;
+	-webkit-border-radius: 4px 4px 0px 0px;
+	-moz-border-radius: 4px 4px 0px 0px;
+	border-radius: 4px 4px 0px 0px;
 }
 
-.sidebar__about-me li a { 
+.sidebar__about-me li:hover:last-child  { 
+	background-color: #3ba8c0;
+	-webkit-border-radius: 0px 0px 4px 4px;
+	-moz-border-radius: 0px 0px 4px 4px;
+	border-radius: 0px 0px 4px 4px;
+}
+
+
+.sidebar__about-me li a{ 
 	text-decoration: none;
-	height: 68px;
+	min-height: 72px;
 	color: #959aa8;
 	display: block;
 	margin-left: 20px;
-	border-top: 2px solid #3ba8c0;
-	width: 210px;
-	font-size: 25px;
+	width: 213px;
+	font-size: 23px;
+	border-bottom: 2px solid #3ba8c0;
+	font-family: "fira_sansbook";
 }
-.sidebar__about-me li:first-child a { 
-	border-top: 0px solid #3ba8c0;
-} 
 
 .sidebar__about-me li a:hover { 
 	color:white;
@@ -132,7 +254,6 @@ body {
 /*     */
 /*   Блок контактов   */
 .sidebar__contacts { 
-	margin-top: 20px;
 	width: 250px;
 	height: 150px;
 	background-color: #eff3f7;
@@ -150,6 +271,8 @@ body {
 	-webkit-border-radius: 4px 4px 0 0 ;
 	-moz-border-radius: 4px 4px 0 0;
 	border-radius: 4px 4px 0 0;
+	font-family: "fira_sansbook";
+	height: 39px;
 }
 .sidebar__contacts ul { 
 	list-style: none;
@@ -159,14 +282,25 @@ body {
 .sidebar__contacts ul li{
 	height: 25px;
 	padding-left: 83px;
-	padding-top: 14px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	position: relative;
 	color:white;
 }
 
+.sidebar__contacts a{ 
+	color:white;
+	text-decoration: none;
+} 
+.sidebar__contacts a:hover { 
+	text-decoration: underline;
+
+}
 
 .sidebar__contact-mail { 
 	background-color: #41b9d4;
+	font-size: 17px;
+	font-family: "fira_sansbook";
 }
 .sidebar__contact-mail:before { 
 	content: '';
@@ -175,10 +309,12 @@ body {
 	width: 25px;
 	position: absolute;
 	left: 42px;
-	top: 10px;
+	top: 12px;
 }
 .sidebar__contact-phone {
 	background-color: #48cbe8;
+	font-size: 17px;
+	font-family: "fira_sansbook";
 }
 .sidebar__contact-phone:before {
 	content: '';
@@ -187,13 +323,15 @@ body {
 	width: 25px;
 	position: absolute;
 	left: 42px;
-	top: 10px;
+	top: 12px;
 }
 .sidebar__contact-skype { 
 	background-color: #51daf8;
 	-webkit-border-radius: 0 0 4px 4px;
 	-moz-border-radius: 0 0 4px 4px;
 	border-radius: 0 0 4px 4px;
+	font-size: 17px;
+	font-family: "fira_sansbook";
 }
 .sidebar__contact-skype:before { 
 	content: '';
@@ -202,7 +340,7 @@ body {
 	width: 25px;
 	position: absolute;
 	left: 42px;
-	top: 10px;
+	top: 12px;
 }
 
 
@@ -226,6 +364,15 @@ body {
 .main__inform-wrapper{
 	display: block;
 }
+.main__inform-list ul  { 
+	display: block;
+	padding: 0;
+	margin: 0;
+	font-family: "fira_sansbook";
+	font-size: 17px;
+}
+
+
 
 /*   */
 
@@ -259,13 +406,14 @@ body {
 }
 .main_myworkslist li a.main_url
 {
+	font-family: "fira_sanslight_italic";
+	font-size: 13px;
 	display: block;
 	color: #4eaec4;
 	width: 181px;
 	height: 10px;
 	margin-top: 13px;
 	text-align: center;
-	font-size: 13px;
 	font-style: italic;
 	color: #3ba8c0;
 	text-decoration: none;
@@ -276,14 +424,13 @@ body {
 	text-align: center;
 	font-size: 15px;
 	color: #4a545d;
+	font-family: "fira_sanslight";
 }
 .main_myworkslist li:last-child { 
 	display: inline-block;
-	width: 181px;
-	height: 127px;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
+	border: 0px;
+	width: 182px;
+	height: 130px;
 	background-color: #edf8fc;
 	margin-right: 20px;
 	margin-bottom: 110px;
@@ -293,25 +440,29 @@ body {
 /*  Страница свяжитесь со мной  */
 .contact { 
 	background-color: #eff3f7;
-	margin-top: 0px;
+	margin-top: 20px;
 	padding-top: 0;
 	width: 100%;
-	-webkit-border-radius: 3px/4px;
-	-moz-border-radius: 3px/4px;
-	border-radius: 3px/4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	border-radius: 4px 4px 4px 4px;
 }
 
 
-h2.contact_heading { 
+h1.contact_heading { 
 	display: block;
 	text-align: center;
 	padding-top: 55px;
 	font-size: 27px;
 	background-color: #48cbe8;
 	border-bottom: 17px solid #67dffa;
-	height: 138px;
+	height: 83px;
 	color:white;
 	margin: 0;
+	-webkit-border-radius: 4px 4px 0px 0px;
+	-moz-border-radius: 4px 4px 0px 0px;
+	border-radius: 4px 4px 0px 0px;
+	font-family: "fira_sansbook";
 }
 .contat-form {
 	width: 100%;
@@ -322,15 +473,37 @@ form {
 	margin: 0 auto;
 	width: 402px;
 }
+
+
+
 label { 
 	display: block;
 	width: 100px;
 	margin: 0;
 	color: #a3a7b4;
 	margin-top: 20px;
+	font-family: "fira_sanslight";
+	font-size: 19px;
 }
+
+.captcha_title { 
+	display: block;
+	width: 450px;
+	height: 40px;
+	margin: 0;
+	margin-top: 20px;
+	font-family: "fira_sanslight";
+	font-size: 19px;
+	color: #959aa8;
+	font-style: normal;
+}
+.captcha_img:after {
+	content: '';
+	display: table;
+	background-image: url(img/captcha.png);
+}
+
 input[type="text"] { 
-	font-family: serif;
 	border: 1px solid #48cbe8;
 	-webkit-border-radius: 4px/2px;
 	-moz-border-radius: 4px/2px;
@@ -342,22 +515,31 @@ input[type="text"] {
 	padding-left: 9px;
 	color: #48cbe8;
 	margin-top: 7px;
+	font-family: "fira_sanslight";
+	font-size: 13px;
 }
 .half_width { 
 	display: inline-block;
 	width: 190px;
-
 }
 .pl { 
 	margin-left: 18px;
 }
- .message input[type="text"] { 
+ .message textarea[type="message"] { 
 	width: 404px;
 	height: 183px;
 	margin: 0;
-	padding-left: 9px;
-	color: #48cbe8;
+	padding: 9px;
 	margin-top: 7px;
+	background-color: #fbfcfd;
+	border: 1px solid #48cbe8;
+	-webkit-border-radius: 4px/2px;
+	-moz-border-radius: 4px/2px;
+	border-radius: 4px/2px;
+	margin-top: 5px;
+	font-family: "fira_sanslight";
+	font-size: 13px;
+	color: #48cbe8;
 }
 
 .contact-form input[type="submit"] {
@@ -371,6 +553,26 @@ input[type="text"] {
 	color: white;
 	float: left;
 	margin: 33px 0;
+	-webkit-box-shadow: 0px 2px #3ba8c0;
+	box-shadow: 0px 2px #3ba8c0;
+	font-family: "fira_sansbook";
+	font-size: 19px;
+}
+
+.contact-form input[name="captcha"] {
+	font-family: serif;
+	border: 1px solid #48cbe8;
+	-webkit-border-radius: 4px/2px;
+	-moz-border-radius: 4px/2px;
+	border-radius: 4px/2px;
+	background-color: #fbfcfd;
+	width: 192px;
+	height: 32px;
+	display: block;
+	padding-left: 9px;
+	color: #48cbe8;
+	margin-top: 7px;
+	margin-left: 210px;
 }
 
 
@@ -386,6 +588,10 @@ input[type="reset"] {
 	float: right;
 	margin-right: -4px;
 	margin: 33px 0;
+	-webkit-box-shadow: 0px 2px #687b8f;
+	box-shadow: 0px 2px #687b8f;
+	font-family: "fira_sansbook";
+	font-size: 19px;
 }
 
 /*      страница входа  */
@@ -488,7 +694,8 @@ h2.login_heading {
 	line-height: 56px;
 	border-bottom: 2px solid #3ba8c0;
 	color: #3ba8c0;
-	font-family: FiraSans Book;
+	font-family: "fira_sansbook";
+	font-size: 27px;
 }
 .main__inform-photo {
 	display: block;
@@ -506,28 +713,57 @@ h2.login_heading {
 }
 .main__inform-data ul {
 	list-style: none;
-	padding-left: 21px;
-	padding-right:25px;
+	padding-left: 5px;
+	padding-right:4px;
 }
 .main__inform-data ul li {
 	line-height: 40px;
+	font-family: "fira_sansbook";
+	font-size: 15px;
+	color: #5a636b;
 }
 .main__inform-data ul li span {
 	font-weight: bold;
-	margin-right: 20px;
+	font-family: "fira_sansmedium";
+	font-size: 17px;
+	margin-right: 10px;
+	float: left;
 }
 .main__inform-data ul li ul {
 	list-style: none;
 	padding: 0;
 }
-.main__inform-data ul li ul li {
+.linear__list { 
 	display: inline-block;
-	float: left;
+	float:left;
+	width: 192px;
 }
+.linear__list li {
+	display: inline-block;
+	background: -moz-linear-gradient(top, #3ba8c0 0%, #3ba8c0 50%, #2e8ca2 50%, #2e8ca2 100%);
+	background: -webkit-linear-gradient(top, #3ba8c0 0%, #3ba8c0 50%, #2e8ca2 50%, #2e8ca2 100%);
+	background: -o-linear-gradient(top, #3ba8c0 0%, #3ba8c0 50%, #2e8ca2 50%, #2e8ca2 100%);
+	background: -ms-linear-gradient(top, #3ba8c0 0%, #3ba8c0 50%, #2e8ca2 50%, #2e8ca2 100%);
+	background: linear-gradient(top, #3ba8c0 0%, #3ba8c0 50%, #2e8ca2 50%, #2e8ca2 100%);
+	color: white !important;
+	padding: 2px 13px;
+	font-size: 14px;
+	height: 19px;
+	font-family: "proximacond_semibold" !important;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
+	line-height: 19px !important;
+}
+
+
 .main__exp ul {
 	list-style: none;
 	padding-top: 0;
 	padding-bottom: 26px;
+	padding-left: 0;
 }
 .main__exp li {
 	margin-left: 131px;
@@ -536,11 +772,13 @@ h2.login_heading {
 }
 .main__exp ul span {
 	display: block;
-	font-size: 15px;
+	font-family: "fira_sansbook";
+	font-size: 17px;
 }
 .main__exp ul span:last-child {
 	display: block;
 	color: #999fa5;
+	font-family: "fira_sanslight";
 	font-size: 15px;
 }
 .main__exp ul li:before {
@@ -556,6 +794,7 @@ h2.login_heading {
 	list-style: none;
 	padding-top: 0;
 	padding-bottom: 26px;
+	padding-left: 0px;
 }
 .main__edu li {
 	margin-left: 131px;
@@ -564,11 +803,13 @@ h2.login_heading {
 }
 .main__edu ul span {
 	display: block;
-	font-size: 15px;
+	font-family: "fira_sansbook";
+	font-size: 17px;
 }
 .main__edu ul span:last-child {
 	display: block;
 	color: #999fa5;
+	font-family: "fira_sanslight";
 	font-size: 15px;
 }
 .main__edu ul li:before {
@@ -602,13 +843,149 @@ h2.login_heading {
 	width: 1400px;
 	height: 3px;
 	background-color: #1c667a;
-	background-image: -webkit-linear-gradient(left, rgba(28,102,122,.95), rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
-	background-image: -moz-linear-gradient(left, rgba(28,102,122,.95), rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
-	background-image: -o-linear-gradient(left, rgba(28,102,122,.95), rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
-	background-image: -ms-linear-gradient(left, rgba(28,102,122,.95), rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
-	background-image: linear-gradient(to right, rgba(28,102,122,.95), rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
+	background-image: -moz-linear-gradient(0deg, rgb(28,102,122) 0%, rgb(246,250,254) 0%, rgb(216,216,216) 0%, rgb(242,246,250) 0%, rgb(135,174,186) 28%, rgb(28,102,122) 48%, rgb(135,174,186) 71%, rgb(242,246,250) 100%);
+	background-image: -webkit-linear-gradient(0deg, rgb(28,102,122) 0%, rgb(246,250,254) 0%, rgb(216,216,216) 0%, rgb(242,246,250) 0%, rgb(135,174,186) 28%, rgb(28,102,122) 48%, rgb(135,174,186) 71%, rgb(242,246,250) 100%);
+	background-image: -ms-linear-gradient(0deg, rgb(28,102,122) 0%, rgb(246,250,254) 0%, rgb(216,216,216) 0%, rgb(242,246,250) 0%, rgb(135,174,186) 28%, rgb(28,102,122) 48%, rgb(135,174,186) 71%, rgb(242,246,250) 100%);
 }
 .footer__copywright{
 	padding-top: 34px;
 	text-align: center;
 }
+
+/*      окно загрузки работ         */
+
+
+
+.dark-wrapper{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(123, 136, 151, .75);
+	top: 0;
+	left: 0;
+	z-index: 2;
+	position: fixed;
+}
+.modal-window{
+	position: relative;
+	left: 38.5%;
+	width: 362px;
+	background-color: #eff3f7;
+	border-radius: 4px;
+	z-index: 3;
+	opacity: none;
+
+}
+.modal-window label{
+	font-family: "fira_sansbook";
+	font-size: 17px;
+	color: #959aa8;
+	display: block;
+	margin-bottom: 6px;
+}
+.modal-window input,
+.modal-window textarea{
+    border: 1px solid #48cbe8;
+    border-radius: 4px;
+    background-color: #fbfcfd;
+
+    font-family: "fira_sanslight";
+    font-size: 13px;
+    color: #48cbe8;
+
+    margin-bottom: 11px;
+    width: 320px;
+    padding: 9px 7px;
+}
+.modal-window textarea{
+    padding: 9px 7px 58px;
+}
+
+/*------------------------------
+placeholder color
+--------------------------------*/
+
+.modal-window input::-webkit-input-placeholder {color:#48cbe8;}
+.modal-window input::-moz-placeholder          {color:#48cbe8;}/* Firefox 19+ */
+.modal-window input:-moz-placeholder           {color:#48cbe8;}/* Firefox 18- */
+.modal-window input:-ms-input-placeholder      {color:#48cbe8;}
+
+.modal-window textarea::-webkit-input-placeholder {color:#48cbe8;}
+.modal-window textarea::-moz-placeholder          {color:#48cbe8;}/* Firefox 19+ */
+.modal-window textarea:-moz-placeholder           {color:#48cbe8;}/* Firefox 18- */
+.modal-window textarea:-ms-input-placeholder      {color:#48cbe8;}
+/*---------------------*/
+
+/*-----------------------
+most upper block
+----------------------*/
+
+.modal-window .title{
+	background-color: #48cbe8;
+	border-radius: 4px 4px 0 0;
+	border-bottom: 9px solid #67dffa;
+	color: #ffffff;
+	font-size: 25px;
+	font-family: "fira_sansregular";
+	padding: 13px 13px 6px;
+}
+.modal-window .title .close{
+    float:right;
+    margin: -28px -1px 0 0;
+    cursor: pointer;
+}
+.modal-window .feedback-form{
+	padding: 11px 21px 2px;
+}
+
+/*----------------------
+third field from top
+-----------------*/
+.modal-window .project-img{
+	margin-bottom: -54px;
+}
+.modal-window .project-img #fake-prj-file{
+    background: url(img/upload.png) no-repeat 278px 7px, url(img/upload.png) no-repeat 267px 0;
+    background-color: #fbfcfd;
+}
+
+/* hidden file input field */
+
+.modal-window .project-img #prj-file{
+	position: relative;
+	top: -53px;
+	/*let's IE8 did it like all other browsers*/
+    filter: alpha(opacity=0); /* internet explorer */
+    opacity: 0;           /* fx, safari, opera, chrome */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=0)"; /*IE8*/
+    cursor: pointer;
+}
+
+/*------------
+send button
+-------------*/
+.modal-window .send-button{
+	margin: 1px 91px;
+}
+.modal-window .send-button input{
+	height: 31px;
+	width: 139px;
+	background-color: #48cbe8;
+	color: #ffffff;
+	font-family: "fira_sansbook";
+	font-size: 19px;
+	-webkit-box-shadow: 0 2px #3ba8c0;
+	box-shadow: 0 2px #3ba8c0;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 1px 1px 0px 0px;
+}
+.modal-window .send-button input:hover{
+	-webkit-box-shadow: 0 2px #48cbe8;
+	box-shadow: 0 2px #48cbe8;
+}
+.modal-window .send-button input:active{
+	-webkit-box-shadow: 0 -2px #3ba8c0;
+	box-shadow: 0 -2px #3ba8c0;
+}
+
+
